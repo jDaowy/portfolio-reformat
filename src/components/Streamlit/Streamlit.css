@@ -1,0 +1,41 @@
+.st-main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.magic-gradient {
+    background: linear-gradient(to right, #FF5E57, #2196F3);
+    -webkit-background-clip: text; /* Important for showing gradient through text */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 25px; /* Example - adjust as needed */
+  }
+
+  .my-st-pic{
+    width: 35vw;
+    margin: 75px;
+    border-radius: 10px;
+  }
+
+  .st-info{
+    color:white;
+    font-size: 17px;
+    width: 600px;
+    text-align: left;
+  }
+
+  .st-link{
+    color: #93aeda;
+  }
+
+  @media (max-width: 768px) { 
+    .st-main{
+      flex-direction: column;
+      height: 80vh;
+    }
+    .my-st-pic{
+      width: 50vw;
+    }
+  }

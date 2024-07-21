@@ -1,0 +1,28 @@
+.vertex-flex {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 10vw;
+}
+
+.vertex-logo {
+  max-width: 30vw;
+  border-radius: 10%;
+}
+
+.vertex-text {
+  max-width: 30vw;
+  text-align: left;
+}
+
+.v-link {
+  color: lightblue;
+}
+
+.grad-container {
+  background: linear-gradient(to right, #427add, green);
+  -webkit-background-clip: text; /* Important for showing gradient through text */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px; /* Example - adjust as needed */
+}

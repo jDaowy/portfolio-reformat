@@ -1,0 +1,95 @@
+.big {
+  height: 100%;
+}
+
+.side-container {
+  background-color: rgb(30, 31, 32);
+  width: 100%;
+  height: 100%;
+  transition: width 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-container.expanded {
+  width: 100%;
+}
+
+.burger-button {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(30, 31, 32);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-style: none;
+  border-radius: 50%;
+  padding-top: 1px;
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.hamburger-line {
+  background-color: white;
+  width: 20px;
+  height: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.burger-button:hover {
+  background-color: #2f3030;
+  cursor: pointer;
+}
+
+.collapse-tooltip {
+  opacity: 0;
+  color: white;
+  background-color: #3c4043;
+  position: absolute;
+  font-size: small;
+  top: 60px;
+  left: 1%;
+  padding: 5px;
+  border-radius: 8px;
+  transition: opacity 0.5s ease-out;
+}
+
+.collapse-tooltip.visible {
+  opacity: 1;
+}
+
+.expanded-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 25px;
+  width: 200px;
+  height: 35px;
+}
+
+.but:hover {
+  background-color: #282a2c;
+  cursor: pointer;
+}
+
+.but.active:hover {
+  /* More specific rule */
+  background-color: #004a77; /* Keep the original blue color */
+}
+
+.active {
+  background-color: #004a77;
+}

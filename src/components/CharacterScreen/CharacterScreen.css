@@ -1,0 +1,74 @@
+/* CharacterScreen.css */
+.main-gallery{
+  padding-top: 50px;
+}
+
+.image-container {
+    display: flex;
+    max-width: 75vw;
+    gap: 1em;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  
+  .box { 
+    width: 100%;   /* Make boxes take up full column width initially */
+    height: 70vh;
+    overflow: hidden; 
+    object-fit: cover;
+    transition: all 0.5s;  /* Apply transition to all boxes */
+    opacity: 0.3;
+  }
+
+  .box-1:hover{
+    width: 300%;
+    opacity: 1;
+  }
+
+  .box-2:hover{
+    width: 300%;
+    opacity: 1;
+  }
+
+  .box-3:hover{
+    width: 300%;
+    opacity: 1;
+  }
+
+  .box-4:hover{
+    width: 300%;
+    opacity: 1;
+  }
+
+  .box-5:hover{
+    width: 300%;
+    opacity: 1;
+  }
+
+  .box:nth-child(odd) {
+    transform: translateY(-16px);
+  }
+  
+  .box:nth-child(even) {
+    transform: translateY(16px);
+  }
+
+  .stable-title{
+    color: white;
+  }
+
+  .stable-text{
+    color:white;
+    font-size: 17px;
+  }
+
+  .stable-grad {
+    background: linear-gradient(to right, #427add, #e66a76);
+    -webkit-background-clip: text; /* Important for showing gradient through text */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 25px; /* Example - adjust as needed */
+  }
+
+  
+  

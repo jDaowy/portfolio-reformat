@@ -1,0 +1,20 @@
+.nav-buttons {
+  display: flex;
+  color: #80868b;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  height: 5vh;
+  margin: 5px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.page-num {
+  font-size: 17px;
+  font-weight: 750;
+}

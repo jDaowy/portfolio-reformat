@@ -1,0 +1,23 @@
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li{
+    padding: 10px;
+    text-align: left;
+    margin: 10px;
+    background-color: rgb(30,31,32);
+    font-size: 20px;
+    font-weight: 100;
+    border-radius: 10px;
+}
+
+.ItemField{
+
+    color: white;
+}
+
+.ItemValue{
+    color: white;
+}

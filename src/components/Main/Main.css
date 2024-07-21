@@ -1,0 +1,62 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.175fr 1fr;
+  grid-template-rows: 0.2fr 2.6fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  min-height: 100vh;
+  background-color: #131314;
+  grid-template-areas:
+    "sidebar title"
+    "sidebar page"
+    "sidebar arrows";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: red;
+  transition: all 1s;
+}
+
+.container.sidebar-collapsed {
+  /* Adjust grid template columns when collapsed */
+  grid-template-columns: 0.035fr 1fr; /* Fixed width for sidebar, rest to content */
+}
+
+.title {
+  grid-area: title;
+  background-color: #131314;
+}
+
+.page {
+  grid-area: page;
+  background-color: white;
+  color: #131314;
+}
+
+.arrows {
+  grid-area: arrows;
+  background-color: #131314;
+}
+
+@import url(//fonts.googleapis.com/css?family=Vibur);
+
+.logo {
+  display: flex;
+  padding-left: 15px;
+  padding-top: 8px;
+  min-height: 12vh;
+}
+
+.logo b {
+  font: 6vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
+    0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo b span {
+  animation: blink linear infinite 8s;
+}
+.logo b span:nth-of-type(2) {
+  animation: blink linear infinite 12s;
+}

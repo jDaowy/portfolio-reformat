@@ -1,0 +1,19 @@
+.profile-avatar{
+    max-width: 30vw;
+    border-radius: 25%;
+}
+
+.git-title{
+    padding-left: 10px;
+    color: white;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.git-gradient {
+    background: linear-gradient(to right, #4CA1AF, #C4E0E5);
+    -webkit-background-clip: text; /* Important for showing gradient through text */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 25px; /* Example - adjust as needed */
+  }
